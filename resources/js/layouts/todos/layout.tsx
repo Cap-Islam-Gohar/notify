@@ -1,0 +1,27 @@
+import Heading from '@/components/heading';
+import { type PropsWithChildren } from 'react';
+
+
+export default function TodosLayout({ children }: PropsWithChildren) {
+    // When server-side rendering, we only render the layout on the client...
+    if (typeof window === 'undefined') {
+        return null;
+    }
+
+    const currentPath = window.location.pathname;
+
+    return (
+        <div className="px-10 py-6">
+            <Heading
+                title="To-Do"
+                description="Manage your Todos"
+            />
+
+            <div className="flex flex-col lg:flex-row lg:space-x-12">
+                <section className="flex space-y-12">
+                    {children}
+                </section>
+            </div>
+        </div>
+    );
+}
