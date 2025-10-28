@@ -2,6 +2,21 @@
 
 This is a **Laravel + Inertia + React** application with a ready-to-use setup for development and production.
 
+
+---
+
+## Notes
+We used Laravel’s built-in notification system together with broadcasting and queues for handling notifications.
+This approach was chosen because:
+
+Laravel’s built-in notification feature provides a clean and flexible structure for sending notifications through multiple channels (database, broadcast, mail, etc.).
+
+Broadcasting allows us to send real-time notifications to all connected users efficiently without reloading the page.
+
+Queues help process these notifications asynchronously, reducing the load on the server—especially when a large number of users receive notifications at the same time.
+
+This combination ensures scalability, performance, and maintainability for both real-time and database notifications.
+
 ---
 
 ## Features
@@ -54,6 +69,7 @@ php artisan key:generate
 5. migrate database:
 ```bash
 php artisan migrate --force
+php artisan db:seed
 ```
 
 ## Installation (Production)
@@ -106,5 +122,12 @@ http://127.0.0.1:8000/docs.openapi
 http://127.0.0.1:8000/docs.postman
 ```
 
+## RoadMap:
+- Add "Load More" Feature to notifications page.
+- Add "filter" to notification (Readed, Unreaded) notifications.
 
 
+## License:
+- The Laravel framework is open-sourced software licensed under the MIT license.
+
+## Thank you 

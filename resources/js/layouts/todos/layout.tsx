@@ -17,8 +17,8 @@ export default function TodosLayout({ children }: PropsWithChildren) {
                 description="Manage your Todos"
             />
 
-            <div className="flex flex-col lg:flex-row lg:space-x-12">
-                <section className="flex space-y-12">
+            <div className="flex flex-col lg:space-x-12">
+                <section className="space-y-12">
                     {children}
                 </section>
             </div>

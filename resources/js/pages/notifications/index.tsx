@@ -61,13 +61,13 @@ export default function Index() {
 
             <NotificationsLayout>
                 <div className="space-y-6">
-                    <div className="flex w-full max-w-lg flex-col gap-6">
+                    <div className="flex w-full flex-col gap-6">
 
                         {notifications.length != 0 ? (
                             notifications.map((notification, index) => (
                                 <Item variant="outline" key={index} className={cn(
                                     "cursor-pointer",
-                                    !notification.read_at ? 'bg-gray-300' : 'bg-white',
+                                    !notification.read_at ? 'bg-gray-200' : 'bg-white',
                                 )} onClick={(e) => {
                                     !notification.read_at && showNotification(notification)
                                 }}>
