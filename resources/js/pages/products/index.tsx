@@ -96,9 +96,6 @@ export default function Index() {
                             </Link>
                         </Button>
                     </div>
-                    <div className="bg-gray-700">
-                        hi
-                    </div>
 
                     <Table>
                         <TableHeader>
