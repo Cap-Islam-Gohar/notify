@@ -73,12 +73,12 @@ php artisan db:seed
 ```
 
 ## Installation (Production)
-1- 
+1- Setup
 ```bash
 composer setup
 ```
 
-2- cach routes and cnfigs for performance
+2- Cache routes and configs for performance:
 ```bash
 php artisan route:cache
 php artisan config:cache
@@ -105,6 +105,11 @@ php artisan serve
 -For real time notification
 ```bash
 php artisan reverb:start
+```
+
+## Run Queue workers:
+```bash
+php artisan queue:work
 ```
 
 ## Api Documentation:
