@@ -44,8 +44,8 @@ This combination ensures scalability, performance, and maintainability for both 
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/my-project.git
-cd my-project
+git clone https://https://github.com/Cap-Islam-Gohar/notify.git
+cd notify
 ```
 
 ## Installation (Development)
